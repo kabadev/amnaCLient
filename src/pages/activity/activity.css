@@ -1,0 +1,100 @@
+.activity {
+  display: flex;
+  gap: 20px;
+}
+.activity__info {
+  width: 40%;
+}
+.participant__list {
+  width: 60%;
+}
+.activiy__cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+}
+.activiy__cards .activity__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 26px -7px var(--shadow);
+  -moz-box-shadow: 2px 2px 26px -7px var(--shadow);
+  box-shadow: 2px 2px 26px -7px var(--shadow);
+}
+.activiy__cards .activity__card h1 {
+  color: var(--header-text-color);
+}
+.comments {
+  margin-top: 20px;
+}
+.comment {
+  margin-bottom: 20px;
+}
+.comment .user {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.comment .user .userimage {
+  width: 3rem;
+  height: 3rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.addcomment {
+  display: flex;
+  gap: 20px;
+}
+.member__header {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--shadow);
+}
+.member__header span {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--header-text-color);
+}
+
+.code {
+  width: 10%;
+}
+.role {
+  width: 20%;
+}
+.national {
+  width: 20%;
+}
+.age {
+  width: 20%;
+}
+.gender {
+  width: 10%;
+}
+.partici__list {
+  max-height: 400px;
+  overflow-y: scroll;
+  margin-top: 10px;
+}
+.partici__list .member {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+}
+@media (max-width: 780px) {
+  .activity {
+    flex-direction: column;
+  }
+  .activity__info {
+    width: 100%;
+  }
+  .participant__list {
+    width: 100%;
+  }
+}

@@ -1,0 +1,30 @@
+.chart {
+  background: var(--color-white);
+  margin-bottom: 10px;
+  padding: 10px;
+  height: 400px;
+  box-sizing: border-box;
+  width: 60%;
+}
+.apexcharts-canvas {
+  width: 100% !important;
+  position: relative;
+}
+.apexcharts-inner {
+  width: 100% !important;
+}
+.apexcharts-canvas svg {
+  width: 100% !important;
+}
+.charts {
+  width: 100%;
+  display: flex;
+}
+@media (max-width: 800px) {
+  .charts {
+    flex-direction: column;
+  }
+  .chart {
+    width: 100%;
+  }
+}

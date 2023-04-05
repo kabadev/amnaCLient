@@ -1,0 +1,16 @@
+.notfound {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.notfound h2,
+.notfound h3 {
+  color: var(--header-text-color);
+}
+.notfound h1 {
+  color: var(--primary-color);
+  font-size: 60px;
+}
